@@ -1,53 +1,51 @@
 <template>
-  <div id="app">
-    <form>
-      <div>
-        <label>Título de la tarjeta: </label>
-        <input v-model="tituloTarjeta" />
-      </div>
 
-      <div>
-        <label>Chip SRC: </label>
-        <input v-model="imgChip" />
-      </div>
-
-      <div>
-        <label>Número: </label>
-        <input v-model="numeroTarjeta" />
-      </div>
-
-      <div>
-        <label>Fecha de expiración: </label>
-        <input v-model="fechaExp" />
-      </div>
-
-      <div>
-        <label>Propietario: </label>
-        <input v-model="propietario" />
-      </div>
-
-      <div>
-        <label>Tipo de tarjeta SRC: </label>
-        <input v-model="imgTarjeta" />
-      </div>
-    </form>
-
-    <div class="carnet">
-      <h3>{{ tituloTarjeta }}</h3>
-      <img width="40" v-bind:src="imgChip" alt="" />
-      <div>
-        <h2>{{ numeroTarjeta }}</h2>
-        <span
-          >Fecha Exp: <b>{{ fechaExp }}</b></span
-        >
-      </div>
-
-      <footer>
-        <span>{{ propietario }}</span>
-        <img v-bind:src="imgTarjeta" width="60" />
-      </footer>
+  <form>
+    <div>
+      <label>Título de la tarjeta: </label>
+      <input v-model="tituloTarjeta" />
     </div>
+
+    <div>
+      <label>Chip SRC: </label>
+      <input v-model="imgChip" />
+    </div>
+
+    <div>
+      <label>Número: </label>
+      <input v-model="numeroTarjeta" />
+    </div>
+
+    <div>
+      <label>Fecha de expiración: </label>
+      <input v-model="fechaExp" />
+    </div>
+
+    <div>
+      <label>Propietario: </label>
+      <input v-model="propietario" />
+    </div>
+
+    <div>
+      <label>Tipo de tarjeta SRC: </label>
+      <input v-model="imgTarjeta" />
+    </div>
+  </form>
+
+  <div class="carnet">
+    <h3>{{ tituloTarjeta }}</h3>
+    <img width="40" v-bind:src="imgChip" alt="" />
+    <div>
+      <h2>{{ numeroTarjeta }}</h2>
+      <span>Fecha Exp: <b>{{ fechaExp }}</b></span>
+    </div>
+
+    <footer>
+      <span>{{ propietario }}</span>
+      <img v-bind:src="imgTarjeta" width="60" />
+    </footer>
   </div>
+
 </template>
 
 <script>
