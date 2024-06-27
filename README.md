@@ -1,4 +1,4 @@
-![alt](./public/imgProjecBilding.png)
+![alt](public/imgProyectoBindig.png)
 Desarrolladora : Ana Celeste Pérez 
 # Desafío - Binding de formularios (I)
 Este proyecto es una aplicación simple en Vue.js que permite a los usuarios ingresar y visualizar los detalles de una tarjeta de crédito.
